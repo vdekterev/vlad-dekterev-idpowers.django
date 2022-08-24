@@ -1,21 +1,21 @@
 print('2.2.1 Задание 1', '\n**********')
 actors = {}
-print('Создан словарь: actors')
+print('1. Создан словарь: actors')
 
 actors['amount'] = 10
-print('Добавлен новый элемент с ключом типа str и значением типа int')
+print('2. Добавлен новый элемент с ключом типа str и значением типа int')
 
 actors[('John Travolta_age', 'Christoph Waltz_age')] = [68, 65]
-print('Добавлен новый элемент с ключом типа кортеж(tuple) и значением типа список(list)')
+print('3. Добавлен новый элемент с ключом типа кортеж(tuple) и значением типа список(list)')
 
-print('Получен элемент по ключу:', actors['amount'])
+print('4. Получен элемент по ключу:', actors['amount'])
 
 del actors['amount']
-print('Удален элемент по ключу')
+print('5. Удален элемент по ключу')
 
-print('Список ключей:', actors.keys())
+print('6. Список ключей:', actors.keys())
 
-print('Список значений', actors.values())
+print('7. Список значений', actors.values())
 print('-------------')
 
 print('2.2.1 Задание 2', '\n**********')
