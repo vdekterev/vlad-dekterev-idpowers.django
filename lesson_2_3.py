@@ -60,10 +60,12 @@ print('3. Получаем несуществующий ключ методом 
 print('Результат:', prices.get(non_existing_keys.pop(), 0))
 print(f'Словарь: {prices}\n')
 
-print("4. Обновляем словарь несколькими ключами\nСоздаем новый словарь: new_prices={'Airpods': 9000, 'iMac': 120000, 'Apple Watch Series 7': 35900}")
+print("4. Обновляем словарь несколькими ключами\nСоздаем новый словарь: new_prices={'Airpods': 9000, 'iMac': 120000, "
+      "'Apple Watch Series 7': 35900}\n")
 new_prices = {'Airpods': 9000, 'iMac': 120000, 'Apple Watch Series 7': 35900, 'iPhone 11': 39000}
-print('5. Объединяем словари + создаем из них новый:\nfinal_prices = prices | new_prices')
-final_prices = prices | new_prices
+print('5. Объединяем словари + создаем из них новый:\nprices.update(new_prices)\nfinal_prices = prices')
+prices.update(new_prices)
+final_prices = prices
 print(f'Словарь: {final_prices}\n')
 print('6. Если ключи словарей пересекаются, ключом становится более поздний:')
 f = {'одинаковый ключ': 'старый ключ', '2': 2}
@@ -71,6 +73,7 @@ s = {'одинаковый ключ': 'новый ключ', '4': 4}
 res = f | s
 print("f = {'одинаковый ключ': 'старый ключ', '2': 2}")
 print("s = {'одинаковый ключ': 'Новый ключ', '4': 4}\nres = f | s")
+
 print(f'Вывод: {res}')
 
 print('2.3.2 Задание 3', '\n**********')
@@ -81,12 +84,13 @@ names_two = {'Yuri', 'Dima', 'Kirill', 'Kirill', 'Anton', 'Yuri'}
 print(f'Множество 1: {names_one}\nМножество 2: {names_two}\n')
 
 print('2. Объединяем созданные множества:\nunion = names_one.union(names_two) или union = names_one | names_two')
-union = names_one.union(names_two)
+union = names_one | names_two
 print(f'Объединенное множество: {union}\n')
 
 print('3. Выполняем пересечение множеств:\ncross = names_one.insertion(names_two) или cross = names_one & names_two')
 cross = names_one & names_two
 print(f'Пересеченные множества: {cross}\n')
+
 
 print('4. Выполняем операцию разности множеств:\ndifference = names_one.difference(names_two) или difference = '
       'names_one - names_two')
