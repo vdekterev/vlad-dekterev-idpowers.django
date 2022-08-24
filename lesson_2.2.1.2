@@ -1,8 +1,20 @@
 names = {'Max', 'Eugene', 'Quentin', 'Ahmed', 'Max'}
+print('Создано множество: names')
 
 names.add('Vadim')
+print('Добавлено новое значение: Vadim')
+
 names.add('Quentin')
+print('Добавлено, уже имеющееся в множестве: Quentin')
+
 names.remove('Ahmed')
+print('Удалено значение: Ahmed')
+
 names.discard('Vladislav')
+print('Удалено несуществующее значение без вызова ошибки')
+
 names.add(('Kirill', 'George'))
+print('Добавлен кортеж')
+
 names.update(['Michael', 'Valerie'])
+print('Добавлен список')
