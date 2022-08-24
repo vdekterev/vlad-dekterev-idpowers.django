@@ -81,13 +81,12 @@ names_two = {'Yuri', 'Dima', 'Kirill', 'Kirill', 'Anton', 'Yuri'}
 print(f'Множество 1: {names_one}\nМножество 2: {names_two}\n')
 
 print('2. Объединяем созданные множества:\nunion = names_one.union(names_two) или union = names_one | names_two')
-union = names_one | names_two
+union = names_one.union(names_two)
 print(f'Объединенное множество: {union}\n')
 
 print('3. Выполняем пересечение множеств:\ncross = names_one.insertion(names_two) или cross = names_one & names_two')
 cross = names_one & names_two
 print(f'Пересеченные множества: {cross}\n')
-
 
 print('4. Выполняем операцию разности множеств:\ndifference = names_one.difference(names_two) или difference = '
       'names_one - names_two')
