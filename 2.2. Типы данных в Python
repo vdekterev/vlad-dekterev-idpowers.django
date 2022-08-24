@@ -1,14 +1,20 @@
 print('2.2.1 Задание 1', '\n**********')
 actors = {}
 print('Создан словарь: actors')
+
 actors['amount'] = 10
 print('Добавлен новый элемент с ключом типа str и значением типа int')
+
 actors[('John Travolta_age', 'Christoph Waltz_age')] = [68, 65]
 print('Добавлен новый элемент с ключом типа кортеж(tuple) и значением типа список(list)')
+
 print('Получен элемент по ключу:', actors['amount'])
+
 del actors['amount']
 print('Удален элемент по ключу')
+
 print('Список ключей:', actors.keys())
+
 print('Список значений', actors.values())
 print('-------------')
 
